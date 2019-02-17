@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\ResultScreen.cs" />
     <Compile Include="Assets\Scripts\Scorekeeper.cs" />
     <Compile Include="Assets\Scripts\Timekeeper.cs" />
+    <Compile Include="Assets\Scripts\TitleScreen.cs" />
     <None Include="Assets\Fonts\README.txt" />
     <None Include="Assets\WebTreats\README.txt" />
     <None Include="Assets\Textures\README.txt" />

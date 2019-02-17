@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class ResultScreen : MonoBehaviour {
 
@@ -38,10 +38,10 @@ public class ResultScreen : MonoBehaviour {
 
         //スコアを表示しボタン押したをまつ
         state = "Show Score";
-        //while (!Input.GetButtonDown("space")) yield;
+        // while (!Input.GetButtonDown("space")) yield;
 
         //ゲームを再起動する
-        //Application.Restart
+        SceneManager.LoadScene("Main");
 
     }
 

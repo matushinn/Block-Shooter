@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23953591107898866}
   - component: {fileID: 65013544105464254}
   - component: {fileID: 54950003606177736}
+  - component: {fileID: 114763961503590332}
   m_Layer: 0
   m_Name: Red Box
   m_TagString: Box
@@ -112,3 +113,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114763961503590332
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1653208246648860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549225f5db2564e52abf5d474ab228bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 1399440648897358, guid: 361e7a78a776848afb2dabfeaa0220bf,
+    type: 2}

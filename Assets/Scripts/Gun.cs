@@ -18,8 +18,16 @@ public class Gun : MonoBehaviour {
             //弾丸プレハブのインスタンス化
             GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
 
+            //クリックした点をワールド座標系に変換
+            var screenPoint = Input.mousePosition;
+            screenPoint.z = 10;
+            var worldPoint = GetComponent<Camera>().ScreenToWorldPoint(screenPoint);
+
+            //クリックした点へ向かうベクトルを速度ベクトルとして設定
+            var direction = (worldPoint - transform.position).normalized;
+
             //前方向への速度ベクトルを設定する
-            Vector3 direction = transform.forward;
+
             bullet.GetComponent<Rigidbody>().velocity = direction * initialVelocity;
 
         }

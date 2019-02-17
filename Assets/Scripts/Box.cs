@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Box : MonoBehaviour {
 
+    //箱の色の名前
+    public string colorName = "Red";
+
     //爆発エフェクト
     public GameObject explosionPrefab;
 
@@ -25,6 +28,10 @@ public class Box : MonoBehaviour {
         }
         killTimer -= Time.deltaTime;
         if(killTimer<= 0.0){
+
+            //破壊をGame Controllerに通知
+            GameObject gameController = GameObject.FindWithTag("GameController");
+            gameController.SendMessage("OnDestroyBox", colorName);
             //エフェクトを出しつつ、自身のゲームオブジェクトを破棄
             Instantiate(explosionPrefab, transform.position, transform.rotation);
             Destroy(gameObject);

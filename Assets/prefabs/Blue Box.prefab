@@ -124,5 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549225f5db2564e52abf5d474ab228bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorName: Blue
   explosionPrefab: {fileID: 1399440648897358, guid: 361e7a78a776848afb2dabfeaa0220bf,
     type: 2}

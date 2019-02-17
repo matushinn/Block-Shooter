@@ -55,4 +55,9 @@ public class BoxGenerator : MonoBehaviour {
         enabled = false;
     }
 
+    public void StartGame()
+    {
+        enabled = true;
+    }
+
 }

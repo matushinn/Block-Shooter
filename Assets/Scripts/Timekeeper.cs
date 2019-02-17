@@ -22,4 +22,9 @@ public class Timekeeper : MonoBehaviour {
             enabled = false;
         }
 	}
+
+    public void StartGame()
+    {
+        enabled = true;
+    }
 }

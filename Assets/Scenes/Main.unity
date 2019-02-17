@@ -572,6 +572,8 @@ GameObject:
   - component: {fileID: 1113473603}
   - component: {fileID: 1113473602}
   - component: {fileID: 1113473604}
+  - component: {fileID: 1113473605}
+  - component: {fileID: 1113473606}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -590,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df91422458524b44b54020654a3777a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skin: {fileID: 0}
   switchInterval: 10
   rewardPoint: 10
   penaltyPoint: 7
@@ -625,6 +628,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   skin: {fileID: 11400000, guid: 21bf18d1f5bab422ba2825acb36589a0, type: 2}
+--- !u!114 &1113473605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113473601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed5eb4b28b834c2da1ab56c088baa21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameLength: 3
+--- !u!114 &1113473606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113473601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ebb0790cccaa4ce88690a5f4d73b640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1366359139
 GameObject:
   m_ObjectHideFlags: 0

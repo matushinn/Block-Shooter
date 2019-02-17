@@ -33,4 +33,7 @@ public class Gun : MonoBehaviour {
         }
 		
 	}
+    void TimeUp(){
+        enabled = false;
+    }
 }

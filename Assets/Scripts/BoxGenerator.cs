@@ -25,11 +25,13 @@ public class BoxGenerator : MonoBehaviour {
         nextIsRed = true;
         timer = 0.0f;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         timer -= Time.deltaTime;
-        if(timer<0.0f){
+        if (timer < 0.0f)
+        {
 
             //位置と姿勢にランダム成分を与えつつ、箱のプレハブをインスタンス化する
             float offsx = Random.Range(-8.0f, 8.0f);
@@ -45,6 +47,12 @@ public class BoxGenerator : MonoBehaviour {
             timer = interval;
             nextIsRed = !nextIsRed;
         }
-		
-	}
+
+
+    }
+    void TimeUp()
+    {
+        enabled = false;
+    }
+
 }

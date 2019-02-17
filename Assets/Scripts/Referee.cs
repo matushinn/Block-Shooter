@@ -78,4 +78,9 @@ public class Referee : MonoBehaviour {
         GUI.Label(new Rect(0, sh/4, sw , sh / 2), message,"message");
 
     }
+    void TimeUp()
+    {
+        enabled = false;
+    }
+
 }

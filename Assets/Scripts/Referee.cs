@@ -83,4 +83,7 @@ public class Referee : MonoBehaviour {
         enabled = false;
     }
 
+    public void StartGame(){
+        enabled = true;
+    }
 }

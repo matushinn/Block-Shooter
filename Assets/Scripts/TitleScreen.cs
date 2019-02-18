@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-    /*
+
     //表示に使うスキン
     public GUISkin skin;
     
@@ -27,5 +27,5 @@ public class TitleScreen : MonoBehaviour
         GUI.Label(new Rect(0, sh/2, sw , sh / 2), "Click To Start", "message");
 
     }
-    */
+
 }

@@ -26,6 +26,7 @@ public class ResultScreen : MonoBehaviour {
 	}
 
     //タイムアップメッセージの表示
+    /*
     public void TimeUp()
     {
         //TimeUpテキストの表示
@@ -44,7 +45,7 @@ public class ResultScreen : MonoBehaviour {
         SceneManager.LoadScene("Main");
 
     }
-
+*/
     public void OnGUI()
     {
         var sw = Screen.width;
